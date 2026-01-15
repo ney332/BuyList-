@@ -7,18 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5FF54F2F0DD5BD00193DFE /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5FF54E2F0DD5BD00193DFE /* Currency.swift */; };
+		5F5FF5512F0DD5EA00193DFE /* BudgetProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5FF5502F0DD5EA00193DFE /* BudgetProgressView.swift */; };
+		5F5FF5532F0DDFDA00193DFE /* EditPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5FF5522F0DDFDA00193DFE /* EditPriceView.swift */; };
 		5F76FABF2EFB703700C3D85A /* Buy_listApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FABE2EFB703700C3D85A /* Buy_listApp.swift */; };
 		5F76FAC12EFB703700C3D85A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FAC02EFB703700C3D85A /* ContentView.swift */; };
 		5F76FAC32EFB703B00C3D85A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F76FAC22EFB703B00C3D85A /* Assets.xcassets */; };
 		5F76FAC62EFB703B00C3D85A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F76FAC52EFB703B00C3D85A /* Preview Assets.xcassets */; };
+		5F76FAD32EFB71B000C3D85A /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FAD22EFB71B000C3D85A /* ShoppingListViewModel.swift */; };
+		5F76FAD52EFB71D400C3D85A /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FAD42EFB71D400C3D85A /* ShoppingList.swift */; };
+		5F76FAD72EFB71E200C3D85A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FAD62EFB71E200C3D85A /* Item.swift */; };
+		5F76FADE2EFB72EB00C3D85A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FADD2EFB72EB00C3D85A /* HomeView.swift */; };
+		5F76FAE02EFB748800C3D85A /* NewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FADF2EFB748800C3D85A /* NewListView.swift */; };
+		5F76FAE22EFB74A300C3D85A /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FAE12EFB74A300C3D85A /* AddItemView.swift */; };
+		5F76FAE42EFB74B800C3D85A /* FinalizeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FAE32EFB74B800C3D85A /* FinalizeListView.swift */; };
+		5F76FAE62EFB74CB00C3D85A /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76FAE52EFB74CB00C3D85A /* ListDetailView.swift */; };
+		5FBE017D2F0EFD8200FD4801 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBE017C2F0EFD8200FD4801 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F76FABB2EFB703700C3D85A /* Buy list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buy list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5FF54E2F0DD5BD00193DFE /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		5F5FF5502F0DD5EA00193DFE /* BudgetProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetProgressView.swift; sourceTree = "<group>"; };
+		5F5FF5522F0DDFDA00193DFE /* EditPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPriceView.swift; sourceTree = "<group>"; };
+		5F76FABB2EFB703700C3D85A /* BuyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F76FABE2EFB703700C3D85A /* Buy_listApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buy_listApp.swift; sourceTree = "<group>"; };
 		5F76FAC02EFB703700C3D85A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5F76FAC22EFB703B00C3D85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F76FAC52EFB703B00C3D85A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F76FAD22EFB71B000C3D85A /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
+		5F76FAD42EFB71D400C3D85A /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		5F76FAD62EFB71E200C3D85A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5F76FADD2EFB72EB00C3D85A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5F76FADF2EFB748800C3D85A /* NewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListView.swift; sourceTree = "<group>"; };
+		5F76FAE12EFB74A300C3D85A /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		5F76FAE32EFB74B800C3D85A /* FinalizeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizeListView.swift; sourceTree = "<group>"; };
+		5F76FAE52EFB74CB00C3D85A /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
+		5FBE017C2F0EFD8200FD4801 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +67,7 @@
 		5F76FABC2EFB703700C3D85A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F76FABB2EFB703700C3D85A /* Buy list.app */,
+				5F76FABB2EFB703700C3D85A /* BuyList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +75,12 @@
 		5F76FABD2EFB703700C3D85A /* Buy list */ = {
 			isa = PBXGroup;
 			children = (
+				5F76FAD12EFB70BA00C3D85A /* Extencions */,
+				5F76FAD02EFB70A400C3D85A /* Components */,
+				5F76FACF2EFB708800C3D85A /* Service */,
+				5F76FACE2EFB708000C3D85A /* Views */,
+				5F76FACD2EFB706B00C3D85A /* ViewModels */,
+				5F76FACC2EFB705400C3D85A /* Models */,
 				5F76FABE2EFB703700C3D85A /* Buy_listApp.swift */,
 				5F76FAC02EFB703700C3D85A /* ContentView.swift */,
 				5F76FAC22EFB703B00C3D85A /* Assets.xcassets */,
@@ -67,12 +97,106 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5F76FACC2EFB705400C3D85A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FAD42EFB71D400C3D85A /* ShoppingList.swift */,
+				5F76FAD62EFB71E200C3D85A /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F76FACD2EFB706B00C3D85A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FAD22EFB71B000C3D85A /* ShoppingListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5F76FACE2EFB708000C3D85A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FADC2EFB726900C3D85A /* Details */,
+				5F76FADB2EFB725000C3D85A /* Finalize */,
+				5F76FADA2EFB723F00C3D85A /* Item */,
+				5F76FAD92EFB721300C3D85A /* NewList */,
+				5F76FAD82EFB720200C3D85A /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F76FACF2EFB708800C3D85A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FBE017C2F0EFD8200FD4801 /* StorageManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5F76FAD02EFB70A400C3D85A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5F5FF5502F0DD5EA00193DFE /* BudgetProgressView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5F76FAD12EFB70BA00C3D85A /* Extencions */ = {
+			isa = PBXGroup;
+			children = (
+				5F5FF54E2F0DD5BD00193DFE /* Currency.swift */,
+			);
+			path = Extencions;
+			sourceTree = "<group>";
+		};
+		5F76FAD82EFB720200C3D85A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FADD2EFB72EB00C3D85A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5F76FAD92EFB721300C3D85A /* NewList */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FADF2EFB748800C3D85A /* NewListView.swift */,
+			);
+			path = NewList;
+			sourceTree = "<group>";
+		};
+		5F76FADA2EFB723F00C3D85A /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FAE12EFB74A300C3D85A /* AddItemView.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		5F76FADB2EFB725000C3D85A /* Finalize */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FAE32EFB74B800C3D85A /* FinalizeListView.swift */,
+			);
+			path = Finalize;
+			sourceTree = "<group>";
+		};
+		5F76FADC2EFB726900C3D85A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				5F76FAE52EFB74CB00C3D85A /* ListDetailView.swift */,
+				5F5FF5522F0DDFDA00193DFE /* EditPriceView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F76FABA2EFB703700C3D85A /* Buy list */ = {
+		5F76FABA2EFB703700C3D85A /* BuyList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "Buy list" */;
+			buildConfigurationList = 5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "BuyList" */;
 			buildPhases = (
 				5F76FAB72EFB703700C3D85A /* Sources */,
 				5F76FAB82EFB703700C3D85A /* Frameworks */,
@@ -82,9 +206,9 @@
 			);
 			dependencies = (
 			);
-			name = "Buy list";
+			name = BuyList;
 			productName = "Buy list";
-			productReference = 5F76FABB2EFB703700C3D85A /* Buy list.app */;
+			productReference = 5F76FABB2EFB703700C3D85A /* BuyList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +239,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F76FABA2EFB703700C3D85A /* Buy list */,
+				5F76FABA2EFB703700C3D85A /* BuyList */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +262,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F76FAC12EFB703700C3D85A /* ContentView.swift in Sources */,
+				5F76FAD52EFB71D400C3D85A /* ShoppingList.swift in Sources */,
+				5F76FAD72EFB71E200C3D85A /* Item.swift in Sources */,
+				5FBE017D2F0EFD8200FD4801 /* StorageManager.swift in Sources */,
+				5F76FAE22EFB74A300C3D85A /* AddItemView.swift in Sources */,
+				5F76FAE42EFB74B800C3D85A /* FinalizeListView.swift in Sources */,
+				5F76FADE2EFB72EB00C3D85A /* HomeView.swift in Sources */,
+				5F5FF5512F0DD5EA00193DFE /* BudgetProgressView.swift in Sources */,
+				5F5FF54F2F0DD5BD00193DFE /* Currency.swift in Sources */,
+				5F76FAD32EFB71B000C3D85A /* ShoppingListViewModel.swift in Sources */,
+				5F5FF5532F0DDFDA00193DFE /* EditPriceView.swift in Sources */,
+				5F76FAE62EFB74CB00C3D85A /* ListDetailView.swift in Sources */,
 				5F76FABF2EFB703700C3D85A /* Buy_listApp.swift in Sources */,
+				5F76FAE02EFB748800C3D85A /* NewListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +411,7 @@
 				DEVELOPMENT_TEAM = 8PJXZ54783;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +441,7 @@
 				DEVELOPMENT_TEAM = 8PJXZ54783;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "Buy list" */ = {
+		5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "BuyList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F76FACA2EFB703B00C3D85A /* Debug */,

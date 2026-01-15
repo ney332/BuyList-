@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-struct AddItemsView: View {
+struct AddItemView: View {
     @Binding var items: [Item]
-
     @State private var name = ""
     @State private var quantity = ""
     @State private var price = ""
@@ -18,9 +17,9 @@ struct AddItemsView: View {
         Form {
             TextField("Produto", text: $name)
             TextField("Quantidade", text: $quantity)
-                .keyboardType(.numberPad)
+            
             TextField("Preço", text: $price)
-                .keyboardType(.decimalPad)
+                .keyboardType(.numbersAndPunctuation)
 
             Button("Adicionar") {
                 let item = Item(
@@ -34,6 +33,7 @@ struct AddItemsView: View {
                 price = ""
             }
         }
+        
     }
 }
 

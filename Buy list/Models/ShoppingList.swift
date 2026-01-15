@@ -12,5 +12,13 @@ let id: UUID
 var name: String
 var budget: Double
 var items: [Item]
-var date: Date
-}
+var data: Date
+    var total: Double {
+            items.reduce(0) {
+                $0 + ($1.price * Double($1.quantity))
+            }
+        }
+    }
+
+
+

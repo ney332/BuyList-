@@ -8,11 +8,44 @@
 import SwiftUI
 
 struct EditPriceView: View {
+
+    @Environment(\.dismiss) var dismiss
+
+    @Binding var price: Double
+    @Binding var quantity: Int
+
+    @State private var priceText: String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Form {
+
+                Section(header: Text("Preço")) {
+                    TextField("Preço", text: $priceText)
+                        .keyboardType(.decimalPad)
+                }
+
+                Section(header: Text("Quantidade")) {
+                    Stepper(
+                        "Quantidade: \(quantity)",
+                        value: $quantity,
+                        in: 1...99
+                    )
+                }
+            }
+            .navigationTitle("Editar Item")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Salvar") {
+                        price = Double(priceText) ?? price
+                        dismiss()
+                    }
+                }
+            }
+            .onAppear {
+                priceText = String(price)
+            }
+        }
     }
 }
 
-#Preview {
-    EditPriceView()
-}

@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct FinalizeListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @Binding var list: ShoppingList
 
-#Preview {
-    FinalizeListView()
+    var total: Double {
+        list.items.reduce(0) {
+            $0 + ($1.price * Double($1.quantity))
+        }
+    }
+
+    var body: some View {
+        List {
+            ForEach(list.items) { item in
+                HStack {
+                    Text(item.name)
+                    Spacer()
+                    Text(
+                        (item.price * Double(item.quantity))
+                            .toCurrency()
+                    )
+                }
+            }
+
+            BudgetProgressView(
+                total: total,
+                budget: list.budget
+            )
+        }
+        .navigationTitle("Finalizar")
+    }
 }

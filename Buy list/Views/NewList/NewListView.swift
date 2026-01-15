@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct NewListView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @Environment(\.dismiss) var dismiss
+    @ObservedObject var viewModel: ShoppingListViewModel
 
-#Preview {
-    NewListView()
+    @State private var name = ""
+    @State private var budget = ""
+
+    var body: some View {
+        NavigationStack {
+            Form {
+                TextField("Nome da lista", text: $name)
+                TextField("Orçamento", text: $budget)
+                    .keyboardType(.decimalPad)
+                
+            }
+            .navigationTitle("Nova Lista")
+            .toolbar {
+                Button("Criar") {
+                    viewModel.addList(
+                        name: name,
+                        budget: Double(budget) ?? 0
+                    )
+                    dismiss()
+                }
+            }
+        }
+    }
 }

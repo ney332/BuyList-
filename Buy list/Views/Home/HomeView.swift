@@ -17,15 +17,15 @@ struct HomeView: View {
 
                     // 🫙 Empty State
                     VStack(spacing: 16) {
-                        Image(systemName: "cart")
-                            .font(.system(size: 48))
-                            .foregroundColor(.secondary)
+                        Image("emptyList")
+                            .padding(.bottom, -146)
+                           
 
                         Text("Não há nada aqui ainda")
                             .font(.headline)
                             .foregroundColor(.secondary)
                         
-                        Text("Crie sua primeira lista de compras e acompanhe seus gastos.")
+                        Text("Crie sua primeira lista")
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
                             .foregroundColor(.secondary)

@@ -8,28 +8,50 @@
 import SwiftUI
 
 struct NewListView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     @ObservedObject var viewModel: ShoppingListViewModel
 
     @State private var name = ""
     @State private var budget = ""
 
+    private var canCreate: Bool {
+        !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
     var body: some View {
         NavigationStack {
             Form {
-                TextField("Nome da lista", text: $name)
-                TextField("Orçamento", text: $budget)
-                    .keyboardType(.decimalPad)
-                
+                Section {
+                    TextField("Nome da lista", text: $name)
+
+                    TextField("Orçamento planejado", text: $budget)
+                        .keyboardType(.decimalPad)
+                } header: {
+                    Text("Informações principais")
+                } footer: {
+                    Text("Você pode deixar o orçamento como zero e ajustar depois, se preferir.")
+                }
             }
-            .navigationTitle("Nova Lista")
+            .scrollContentBackground(.hidden)
+            .appBackground()
+            .navigationTitle("Nova lista")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Button("Criar") {
-                    viewModel.addList(
-                        name: name,
-                        budget: Double(budget) ?? 0
-                    )
-                    dismiss()
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancelar") {
+                        dismiss()
+                    }
+                }
+
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Criar") {
+                        viewModel.addList(
+                            name: name.trimmingCharacters(in: .whitespacesAndNewlines),
+                            budget: Double(budget.replacingOccurrences(of: ",", with: ".")) ?? 0
+                        )
+                        dismiss()
+                    }
+                    .disabled(!canCreate)
                 }
             }
         }

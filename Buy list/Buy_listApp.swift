@@ -8,11 +8,12 @@
 import SwiftUI
 
 @main
-struct Buy_listApp: App {
+struct MercadoSimpleApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
-                .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+                .tint(AppTheme.tint)
+                .preferredColorScheme(.light)
         }
     }
 }

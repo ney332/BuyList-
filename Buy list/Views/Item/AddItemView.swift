@@ -8,32 +8,59 @@
 import SwiftUI
 
 struct AddItemView: View {
+    @Environment(\.dismiss) private var dismiss
+
     @Binding var items: [Item]
     @State private var name = ""
-    @State private var quantity = ""
+    @State private var isCleaningProduct = false
+    @State private var quantity = "1"
     @State private var price = ""
 
-    var body: some View {
-        Form {
-            TextField("Produto", text: $name)
-            TextField("Quantidade", text: $quantity)
-            
-            TextField("Preço", text: $price)
-                .keyboardType(.numbersAndPunctuation)
+    private var canAdd: Bool {
+        !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
 
-            Button("Adicionar") {
-                let item = Item(
-                    name: name,
-                    quantity: Int(quantity) ?? 1,
-                    price: Double(price) ?? 0
-                )
-                items.append(item)
-                name = ""
-                quantity = ""
-                price = ""
+    var body: some View {
+        NavigationStack {
+            Form {
+                Section("Produto") {
+                    TextField("Nome do item", text: $name)
+
+                    Toggle(isOn: $isCleaningProduct) {
+                        Label("Produto de limpeza", systemImage: "sparkles")
+                    }
+
+                    TextField("Quantidade", text: $quantity)
+                        .keyboardType(.numberPad)
+                    TextField("Preco unitario", text: $price)
+                        .keyboardType(.decimalPad)
+                }
+
+                Section {
+                    Button("Adicionar item") {
+                        let item = Item(
+                            name: name.trimmingCharacters(in: .whitespacesAndNewlines),
+                            isCleaningProduct: isCleaningProduct,
+                            quantity: max(Int(quantity) ?? 1, 1),
+                            price: Double(price.replacingOccurrences(of: ",", with: ".")) ?? 0
+                        )
+                        items.append(item)
+                        dismiss()
+                    }
+                    .disabled(!canAdd)
+                }
+            }
+            .scrollContentBackground(.hidden)
+            .appBackground()
+            .navigationTitle("Novo item")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancelar") {
+                        dismiss()
+                    }
+                }
             }
         }
-        
     }
 }
-

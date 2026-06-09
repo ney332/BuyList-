@@ -1,12 +1,12 @@
-# 🛒 BuyList
+# 🛒 Mercado simple - Saiba quanto antes de pagar
 
 ## 📱 Sobre o projeto
 
-**BuyList** é um aplicativo iOS desenvolvido em **SwiftUI** com o objetivo de ajudar usuários a organizarem suas compras de mercado de forma simples, eficiente e financeiramente consciente. O app permite criar listas de compras, adicionar itens com preço e quantidade, calcular o total em tempo real e definir um orçamento máximo para cada lista.
+**Mercado simple - Saiba quanto antes de pagar** é um aplicativo iOS desenvolvido em **SwiftUI** com o objetivo de ajudar usuários a organizarem suas compras de mercado de forma simples, eficiente e financeiramente consciente. O app permite criar listas de compras, adicionar itens com preço e quantidade, calcular o total em tempo real e definir um orçamento máximo para cada lista.
 
 ---
 
-## 🎯 Para quem é o BuyList?
+## 🎯 Para quem é o Mercado simple - Saiba quanto antes de pagar?
 
 * Pessoas que desejam **controlar melhor seus gastos no mercado**
 * Usuários que costumam extrapolar o orçamento por falta de controle em tempo real
@@ -22,7 +22,7 @@ Muitas pessoas vão ao mercado sem saber exatamente quanto estão gastando até 
 * Falta de controle financeiro
 * Compras impulsivas
 
-O **BuyList** resolve esse problema ao **somar automaticamente os valores conforme o usuário adiciona ou edita os itens**, permitindo decisões conscientes durante a compra.
+O **Mercado simple - Saiba quanto antes de pagar** resolve esse problema ao **somar automaticamente os valores conforme o usuário adiciona ou edita os itens**, permitindo decisões conscientes durante a compra.
 
 ---
 

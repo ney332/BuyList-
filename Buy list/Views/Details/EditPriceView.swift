@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct EditPriceView: View {
+    @Environment(\.dismiss) private var dismiss
 
-    @Environment(\.dismiss) var dismiss
-
+    let name: String
     @Binding var price: Double
     @Binding var quantity: Int
 
@@ -19,25 +19,34 @@ struct EditPriceView: View {
     var body: some View {
         NavigationStack {
             Form {
+                Section("Item") {
+                    Text(name)
+                        .foregroundStyle(.secondary)
+                }
 
-                Section(header: Text("Preço")) {
-                    TextField("Preço", text: $priceText)
+                Section("Preco") {
+                    TextField("Preco unitario", text: $priceText)
                         .keyboardType(.decimalPad)
                 }
 
-                Section(header: Text("Quantidade")) {
-                    Stepper(
-                        "Quantidade: \(quantity)",
-                        value: $quantity,
-                        in: 1...99
-                    )
+                Section("Quantidade") {
+                    Stepper("Quantidade: \(quantity)", value: $quantity, in: 1...99)
                 }
             }
-            .navigationTitle("Editar Item")
+            .scrollContentBackground(.hidden)
+            .appBackground()
+            .navigationTitle("Editar item")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancelar") {
+                        dismiss()
+                    }
+                }
+
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Salvar") {
-                        price = Double(priceText) ?? price
+                        price = Double(priceText.replacingOccurrences(of: ",", with: ".")) ?? price
                         dismiss()
                     }
                 }
@@ -48,4 +57,3 @@ struct EditPriceView: View {
         }
     }
 }
-

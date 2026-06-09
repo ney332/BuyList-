@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C35F13A2F55F2AE005FDBCD /* AppBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C35F1392F55F2AE005FDBCD /* AppBackgroundModifier.swift */; };
+		1C35F13C2F5898FE005FDBCD /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C35F13B2F5898FE005FDBCD /* StatisticsView.swift */; };
+		1C35F13E2F58991B005FDBCD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C35F13D2F58991B005FDBCD /* SettingsView.swift */; };
+		1C35F1402F59E6CD005FDBCD /* ChatGPT Image 2 de mar. de 2026, 13_27_35.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C35F13F2F59E6CD005FDBCD /* ChatGPT Image 2 de mar. de 2026, 13_27_35.png */; };
 		5F5FF54F2F0DD5BD00193DFE /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5FF54E2F0DD5BD00193DFE /* Currency.swift */; };
 		5F5FF5512F0DD5EA00193DFE /* BudgetProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5FF5502F0DD5EA00193DFE /* BudgetProgressView.swift */; };
 		5F5FF5532F0DDFDA00193DFE /* EditPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5FF5522F0DDFDA00193DFE /* EditPriceView.swift */; };
@@ -26,10 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C35F1392F55F2AE005FDBCD /* AppBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundModifier.swift; sourceTree = "<group>"; };
+		1C35F13B2F5898FE005FDBCD /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		1C35F13D2F58991B005FDBCD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1C35F13F2F59E6CD005FDBCD /* ChatGPT Image 2 de mar. de 2026, 13_27_35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChatGPT Image 2 de mar. de 2026, 13_27_35.png"; sourceTree = "<group>"; };
 		5F5FF54E2F0DD5BD00193DFE /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		5F5FF5502F0DD5EA00193DFE /* BudgetProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetProgressView.swift; sourceTree = "<group>"; };
 		5F5FF5522F0DDFDA00193DFE /* EditPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPriceView.swift; sourceTree = "<group>"; };
-		5F76FABB2EFB703700C3D85A /* BuyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F76FABB2EFB703700C3D85A /* Mercado simples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mercado simples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F76FABE2EFB703700C3D85A /* Buy_listApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buy_listApp.swift; sourceTree = "<group>"; };
 		5F76FAC02EFB703700C3D85A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5F76FAC22EFB703B00C3D85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +75,7 @@
 		5F76FABC2EFB703700C3D85A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F76FABB2EFB703700C3D85A /* BuyList.app */,
+				5F76FABB2EFB703700C3D85A /* Mercado simples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +92,7 @@
 				5F76FABE2EFB703700C3D85A /* Buy_listApp.swift */,
 				5F76FAC02EFB703700C3D85A /* ContentView.swift */,
 				5F76FAC22EFB703B00C3D85A /* Assets.xcassets */,
+				1C35F13F2F59E6CD005FDBCD /* ChatGPT Image 2 de mar. de 2026, 13_27_35.png */,
 				5F76FAC42EFB703B00C3D85A /* Preview Content */,
 			);
 			path = "Buy list";
@@ -117,6 +126,8 @@
 		5F76FACE2EFB708000C3D85A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C35F13D2F58991B005FDBCD /* SettingsView.swift */,
+				1C35F13B2F5898FE005FDBCD /* StatisticsView.swift */,
 				5F76FADC2EFB726900C3D85A /* Details */,
 				5F76FADB2EFB725000C3D85A /* Finalize */,
 				5F76FADA2EFB723F00C3D85A /* Item */,
@@ -154,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5F76FADD2EFB72EB00C3D85A /* HomeView.swift */,
+				1C35F1392F55F2AE005FDBCD /* AppBackgroundModifier.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -194,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F76FABA2EFB703700C3D85A /* BuyList */ = {
+		5F76FABA2EFB703700C3D85A /* Mercado simple - Saiba quanto antes de pagar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "BuyList" */;
+			buildConfigurationList = 5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "Mercado simple - Saiba quanto antes de pagar" */;
 			buildPhases = (
 				5F76FAB72EFB703700C3D85A /* Sources */,
 				5F76FAB82EFB703700C3D85A /* Frameworks */,
@@ -206,9 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = BuyList;
-			productName = "Buy list";
-			productReference = 5F76FABB2EFB703700C3D85A /* BuyList.app */;
+			name = "Mercado simple - Saiba quanto antes de pagar";
+			productName = "Mercado simples";
+			productReference = 5F76FABB2EFB703700C3D85A /* Mercado simples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -239,7 +251,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F76FABA2EFB703700C3D85A /* BuyList */,
+				5F76FABA2EFB703700C3D85A /* Mercado simple - Saiba quanto antes de pagar */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C35F1402F59E6CD005FDBCD /* ChatGPT Image 2 de mar. de 2026, 13_27_35.png in Resources */,
 				5F76FAC62EFB703B00C3D85A /* Preview Assets.xcassets in Resources */,
 				5F76FAC32EFB703B00C3D85A /* Assets.xcassets in Resources */,
 			);
@@ -266,6 +279,9 @@
 				5F76FAD72EFB71E200C3D85A /* Item.swift in Sources */,
 				5FBE017D2F0EFD8200FD4801 /* StorageManager.swift in Sources */,
 				5F76FAE22EFB74A300C3D85A /* AddItemView.swift in Sources */,
+				1C35F13E2F58991B005FDBCD /* SettingsView.swift in Sources */,
+				1C35F13C2F5898FE005FDBCD /* StatisticsView.swift in Sources */,
+				1C35F13A2F55F2AE005FDBCD /* AppBackgroundModifier.swift in Sources */,
 				5F76FAE42EFB74B800C3D85A /* FinalizeListView.swift in Sources */,
 				5F76FADE2EFB72EB00C3D85A /* HomeView.swift in Sources */,
 				5F5FF5512F0DD5EA00193DFE /* BudgetProgressView.swift in Sources */,
@@ -405,12 +421,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Buy list/Preview Content\"";
 				DEVELOPMENT_TEAM = 8PJXZ54783;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mercado simple - Saiba quanto antes de pagar";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -422,8 +440,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.Buy-list";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.lorran.com;
+				PRODUCT_NAME = "Mercado simples";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,12 +454,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Buy list/Preview Content\"";
 				DEVELOPMENT_TEAM = 8PJXZ54783;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mercado simple - Saiba quanto antes de pagar";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -452,8 +473,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.Buy-list";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.lorran.com;
+				PRODUCT_NAME = "Mercado simples";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,7 +494,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "BuyList" */ = {
+		5F76FAC92EFB703B00C3D85A /* Build configuration list for PBXNativeTarget "Mercado simple - Saiba quanto antes de pagar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F76FACA2EFB703B00C3D85A /* Debug */,
